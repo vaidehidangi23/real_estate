@@ -1,9 +1,12 @@
 {
   "name": "real_estate",
   "version": "0.1.0",
+  "homepage": "https://vaidehidangi23.github.io/real_estate",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -24,6 +27,7 @@
   },
   "devDependencies": {
     "eslint": "8.10.0",
-    "eslint-config-next": "12.1.0"
+    "eslint-config-next": "12.1.0",
+    "gh-pages": "^3.2.3"
   }
 }
